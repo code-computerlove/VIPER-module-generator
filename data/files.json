@@ -1,0 +1,30 @@
+[
+	{
+		"name": "TemplateModuleProtocols.swift", 
+		"path": "."
+	},
+	{
+		"name": "TemplateWireframe.swift", 
+		"path": "/Wireframe"
+	},
+	{
+		"name": "TemplateDataManager.swift", 
+		"path": "/DataManager"
+	},
+	{
+		"name": "TemplateInteractor.swift", 
+		"path": "/Interactor"
+	},
+	{
+		"name": "TemplatePresenter.swift", 
+		"path": "/Presenter"
+	},
+	{
+		"name": "TemplateViewController.swift", 
+		"path": "/View"
+	},
+	{
+		"name": "Template.storyboard", 
+		"path": "/View"
+	}
+]
