@@ -4,7 +4,7 @@
   "description": "Custom Swift based VIPER module generator",
   "main": "bin/vmg.js",
   "scripts": {
-    "test": "JUNIT_REPORT_PATH=report.xml JUNIT_REPORT_STACK=1 ./node_modules/mocha/bin/mocha tests --reporter mocha-jenkins-reporter"
+    "test": "JUNIT_REPORT_PATH=report.xml JUNIT_REPORT_STACK=1 ./node_modules/mocha/bin/mocha tests"
   },
   "repository": {
     "type": "git",
