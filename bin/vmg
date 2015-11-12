@@ -2,10 +2,10 @@
 
 var program = require('commander');
 var packageJson = require('read-package-json');
-var utils = require('../src/utils');
+var utils = require('../lib/utils');
 
 var templateDataDirName = 'data';
-var generator = require('../src/module-generator')(templateDataDirName);
+var generator = require('../lib/module-generator')(templateDataDirName);
 
 packageJson(__dirname + '/../package.json',function (error, package) {
 	
