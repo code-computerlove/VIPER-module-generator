@@ -2,9 +2,17 @@
   "name": "vmg",
   "version": "1.0.0",
   "description": "Custom Swift based VIPER module generator",
-  "main": "bin/vmg.js",
+  "main": "lib/module-generator.js",
   "scripts": {
     "test": "JUNIT_REPORT_PATH=report.xml JUNIT_REPORT_STACK=1 ./node_modules/mocha/bin/mocha tests"
+  },
+  "keywords": [
+    "VIPER",
+    "iOS",
+    "generator"
+  ],
+  "bin": {
+    "vmg": "./bin/vmg"
   },
   "repository": {
     "type": "git",
