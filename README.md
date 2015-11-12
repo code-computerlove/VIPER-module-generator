@@ -14,3 +14,18 @@ You can install it globally using NPM:
 npm install -g https://github.com/code-computerlove/VIPER-module-generator.git
 ```
 
+## Generated directory structure
+```bash
++-- DataManager
+|   +-- TemplateDataManager.swift
++-- Interactor
+|   +-- TemplateInteractor.swift
++-- Presenter
+|   +-- TemplatePresenter.swift
++-- View
+|   +-- TemplateViewController.swift
+|   +-- Template.storyboard
++-- Wireframe
+|   +-- TemplateWireframe.swift
++-- TemplateProtocols.swift
+```
