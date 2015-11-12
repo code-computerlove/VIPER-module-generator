@@ -1,3 +1,16 @@
-# VIPER Module Generator
+Swift VIPER Module Generator
+============================
 
-Custom Swift based VIPER module generator
+VIPER is an application architecture discussed in the Objc.io article no.13, ttp://www.objc.io/issue-13/viper.html.
+
+This is an NPM package to generate VIPER modules for use in Swift based iOS projects. The Module creation happens in the Wireframe of the module which means ll module dependencies are disposed of when the view controller is removed from the navigation stack.
+
+- [Installation](#installation)
+
+##Installation
+
+You can install it globally using NPM:
+```bash
+sudo npm install vipergen
+```
+
