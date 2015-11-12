@@ -4,7 +4,7 @@ import UIKit
 
 protocol TemplateWireframeProtocol: class {
 	init(mainWireframe: MainWireframe)
-	func presentSelfWithViewModel(viewModel: TemplateViewModel)
+	func presentSelf()
 }
 
 protocol TemplateViewProtocol: class {

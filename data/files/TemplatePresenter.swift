@@ -7,8 +7,6 @@ class TemplatePresenter: TemplatePresenterProtocol, TemplateInteractorOutputProt
 	private let interactor: TemplateInteractorInputProtocol
 	private let wireframe: TemplateWireframeProtocol
 	
-	var viewModel: TemplateViewModel?
-	
 	
 	//TemplatePresenterProtocol Functions
 	
@@ -20,6 +18,6 @@ class TemplatePresenter: TemplatePresenterProtocol, TemplateInteractorOutputProt
 	}
 	
 	func prepareView() {
-		self.view?.setTitle(viewModel?.title)
+		self.view?.setTitle("Hello World")
 	}
 }
