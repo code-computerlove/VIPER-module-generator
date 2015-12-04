@@ -14,10 +14,16 @@ class TemplateWireframe : TemplateWireframeProtocol {
 		
 		let storyboard = UIStoryboard(name: "Template", bundle: nil)
 		let viewController = storyboard.instantiateInitialViewController() as! TemplateViewProtocol
-		let appContentDataStore = JsonFileDataStore(path: mainWireframe.config.appContentFilePath)
-		let dataManager = TemplateDataManager(appContentDataStore: appContentDataStore)
-		let interactor = TemplateInteractor(dataManager: dataManager)
-		let presenter = TemplatePresenter(view: viewController, interactor: interactor, wireframe: self)
+
+		let interactor = TemplateInteractor(
+			dataManager: TemplateDataManager(
+				appContentDataStore: JsonFileDataStore(
+					path: mainWireframe.config.appContentFilePath)))
+
+		let presenter = TemplatePresenter(
+			view: viewController, 
+			interactor: interactor, 
+			wireframe: self)
 		
 		viewController.eventHandler = presenter
 		interactor.presenter = presenter
