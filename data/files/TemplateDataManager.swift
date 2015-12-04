@@ -1,13 +1,16 @@
 import Foundation
 
-class TemplateDataManager: TemplateDataManagerProtocol {
+
+class TemplateDataManager {
 
 	private let appContentDataStore: DataStoreReaderProtocol
-	
-	
-	// TemplateDataManagerProtocol Functions
 	
 	required init(appContentDataStore: DataStoreReaderProtocol) {
 		self.appContentDataStore = appContentDataStore
 	}
+}
+
+
+extension TemplateDataManager: TemplateDataManagerProtocol {
+	
 }

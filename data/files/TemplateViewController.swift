@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 
-class TemplateViewController: UIViewController, TemplateViewProtocol {
+class TemplateViewController: UIViewController {
 	
 	var eventHandler: TemplatePresenterProtocol!
 	
@@ -12,10 +12,11 @@ class TemplateViewController: UIViewController, TemplateViewProtocol {
 		super.viewDidLoad()
 		self.eventHandler.prepareView()
 	}
-	
-	
-	//TemplateViewProtocol Functions
-	
+}
+
+
+extension TemplateViewController: TemplateViewProtocol {
+
 	func setTitle(title: String?) {
 		self.titleLabel.text = title
 	}

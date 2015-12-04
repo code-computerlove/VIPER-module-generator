@@ -8,7 +8,7 @@
         <!--Example View Controller-->
         <scene sceneID="JAP-Gf-jne">
             <objects>
-                <viewController id="ch2-jq-h9Q" customClass="ExampleViewController" customModule="__PROJECT_NAME__" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ch2-jq-h9Q" customClass="TemplateViewController" customModule="__PROJECT_NAME__" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LgH-Wz-8pU"/>
                         <viewControllerLayoutGuide type="bottom" id="JxT-oX-jUg"/>

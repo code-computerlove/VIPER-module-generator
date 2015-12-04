@@ -13,7 +13,9 @@ protocol TemplateViewProtocol: class {
 }
 
 protocol TemplatePresenterProtocol: class {
-	init(view: TemplateViewProtocol, interactor: TemplateInteractorInputProtocol, wireframe: TemplateWireframeProtocol)
+	init(view: TemplateViewProtocol, 
+		interactor: TemplateInteractorInputProtocol, 
+		wireframe: TemplateWireframeProtocol)
 	var viewModel: TemplateViewModel? { get set }
 	func prepareView()
 }

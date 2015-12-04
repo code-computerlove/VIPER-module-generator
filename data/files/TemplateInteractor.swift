@@ -1,14 +1,17 @@
 import Foundation
 
-class TemplateInteractor: TemplateInteractorInputProtocol {
+
+class TemplateInteractor {
 	
 	weak var presenter: TemplateInteractorOutputProtocol?
 	private let dataManager: TemplateDataManagerProtocol
 	
-	
-	// TemplateInteractorInputProtocol Functions
-	
 	required init(dataManager: TemplateDataManagerProtocol) {
 		self.dataManager = dataManager
 	}
+}
+
+
+extension TemplateInteractor: TemplateInteractorInputProtocol {
+	
 }
