@@ -17,7 +17,7 @@ class TemplateViewController: UIViewController {
 
 extension TemplateViewController: TemplateViewProtocol {
 
-	func setTitle(title: String?) {
+	func setTitleText(title: String?) {
 		self.titleLabel.text = title
 	}
 }

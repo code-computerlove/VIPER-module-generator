@@ -3,7 +3,7 @@ import Foundation
 
 class TemplatePresenter {
 	
-	private weak var view: TemplateViewProtocol
+	private weak var view: TemplateViewProtocol?
 	private let interactor: TemplateInteractorInputProtocol
 	private let wireframe: TemplateWireframeProtocol
 	
@@ -21,7 +21,7 @@ class TemplatePresenter {
 extension TemplatePresenter: TemplatePresenterProtocol {
 	
 	func prepareView() {
-		self.view.setTitle("Hello World")
+		self.view?.setTitleText("Hello World")
 	}
 }
 

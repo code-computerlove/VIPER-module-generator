@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 
-class TemplateWireframe : TemplateWireframeProtocol {
+class TemplateWireframe {
 
 	private let mainWireframe: MainWireframe
 	
@@ -18,7 +18,7 @@ class TemplateWireframe : TemplateWireframeProtocol {
 		let interactor = TemplateInteractor(
 			dataManager: TemplateDataManager(
 				appContentDataStore: JsonFileDataStore(
-					path: mainWireframe.config.appContentFilePath)))
+					path: mainWireframe.config.appContentFilePath!)))
 
 		let presenter = TemplatePresenter(
 			view: viewController, 

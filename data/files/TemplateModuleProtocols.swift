@@ -9,14 +9,13 @@ protocol TemplateWireframeProtocol: class {
 
 protocol TemplateViewProtocol: class {
 	var eventHandler: TemplatePresenterProtocol! { get set }
-	func setTitle(title: String?)
+	func setTitleText(title: String?)
 }
 
 protocol TemplatePresenterProtocol: class {
 	init(view: TemplateViewProtocol, 
 		interactor: TemplateInteractorInputProtocol, 
 		wireframe: TemplateWireframeProtocol)
-	var viewModel: TemplateViewModel? { get set }
 	func prepareView()
 }
 
