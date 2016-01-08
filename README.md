@@ -14,6 +14,14 @@ You can install it globally using NPM:
 npm install -g https://github.com/code-computerlove/VIPER-module-generator.git
 ```
 
+##Usage
+
+Navigate to directory where the module needs to be created.
+
+```bash
+vmg create [ModuleName]
+```
+
 ## Generated directory structure
 ```bash
 +-- DataManager
